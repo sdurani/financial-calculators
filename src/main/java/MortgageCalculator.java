@@ -1,27 +1,5 @@
-import java.util.Scanner;
 
 public class MortgageCalculator {
-
-    // Initiate scanner as read.
-    static Scanner read = new Scanner(System.in);
-
-    public static void main(String[] args) {
-
-        System.out.println("What is the principal amount?");
-        double principalAmt = read.nextDouble();
-        System.out.println("What is the interest rate?");
-        double annualInterestRate = read.nextDouble();
-        System.out.println("What is the loan length (years)?");
-        int loanLength = read.nextInt();
-
-        int numOfMoPayments = calculateNumOfMoPayments(loanLength);
-        double monthlyPayment = calculateMonthlyPayment(principalAmt, annualInterestRate, numOfMoPayments);
-        double totalInterest = calculateTotalInterest(monthlyPayment, numOfMoPayments, principalAmt);
-
-        displayFinalMessage(monthlyPayment, totalInterest);
-
-        read.close();
-    }
 
     public static int calculateNumOfMoPayments(int loanLength) {
         int numOfMoPayments = loanLength * 12;
