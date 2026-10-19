@@ -29,7 +29,9 @@ public class FutureValueCalculator {
     }
 
     public static void displayFinalMessage(double futureValue, double totalInterestEarned) {
+        System.out.println("\n------------ RESULTS ------------");
         System.out.printf("Your expected future value is: $%.2f%n", futureValue);
         System.out.printf("Your total interest earned is: $%.2f%n", totalInterestEarned);
+        System.out.println("\n------------ Thank you for using the CD Future Value Calculator! ------------");
     }
 }

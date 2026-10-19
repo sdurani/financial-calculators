@@ -25,7 +25,9 @@ public class MortgageCalculator {
     }
 
     public static void displayFinalMessage(double monthlyPayment, double totalInterest) {
+        System.out.println("\n------------ RESULTS ------------");
         System.out.printf("Your expected monthly payment is: $%.2f%n", monthlyPayment);
         System.out.printf("Your total interest is: $%.2f%n", totalInterest);
+        System.out.println("\n------------ Thank you for using the Mortgage Calculator! ------------");
     }
 }
